@@ -1,8 +1,10 @@
+import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { ArrowLeft, AtSign, Lock, Eye, ArrowRight } from 'lucide-react';
+import { ArrowLeft, AtSign, Lock, Eye, EyeOff, ArrowRight } from 'lucide-react';
 
 export default function Register() {
   const navigate = useNavigate();
+  const [showPassword, setShowPassword] = useState(false);
 
   const handleRegister = (e: React.FormEvent) => {
     e.preventDefault();
@@ -69,12 +71,16 @@ export default function Register() {
                   <Lock size={16} className="text-[#A89F95]" />
                 </div>
                 <input 
-                  type="password" 
+                  type={showPassword ? "text" : "password"} 
                   placeholder="••••••••"
-                  className="w-full pl-11 pr-11 py-3.5 bg-[#FAF6F0] border border-[#E8D5C4] rounded-2xl text-sm font-medium tracking-widest focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary text-[#5D4037]"
+                  className={`w-full pl-11 pr-11 py-3.5 bg-[#FAF6F0] border border-[#E8D5C4] rounded-2xl text-sm font-medium focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary text-[#5D4037] ${showPassword ? '' : 'tracking-widest'}`}
                 />
-                <button type="button" className="absolute inset-y-0 right-0 pr-4 flex items-center">
-                  <Eye size={18} className="text-[#3E2723]" />
+                <button 
+                  type="button" 
+                  className="absolute inset-y-0 right-0 pr-4 flex items-center cursor-pointer"
+                  onClick={() => setShowPassword(!showPassword)}
+                >
+                  {showPassword ? <EyeOff size={18} className="text-[#3E2723]" /> : <Eye size={18} className="text-[#3E2723]" />}
                 </button>
               </div>
             </div>
