@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 export default function Dashboard() {
   return (
-    <div className="min-h-screen p-6 pb-32 bg-[#FAF6F0]">
+    <div className="min-h-screen px-6 pt-14 pb-32 bg-[#FAF6F0]">
       {/* Top Navbar */}
       <header className="flex justify-between items-center mb-6">
         <div className="flex items-center gap-2">

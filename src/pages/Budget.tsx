@@ -5,7 +5,7 @@ export default function Budget() {
   const navigate = useNavigate();
 
   return (
-    <div className="w-full bg-transparent p-6 flex flex-col items-center">
+    <div className="w-full bg-transparent px-6 pt-14 pb-6 flex flex-col items-center">
       <div className="w-full self-start mb-6">
         <button onClick={() => navigate('/app/dashboard')} className="inline-flex items-center gap-1 bg-[#D99A5A] text-[#5D3A1A] font-semibold text-xs px-3 py-1.5 rounded-full hover:bg-[#C98A4A] transition-colors">
           <ArrowLeft size={14} /> Kembali

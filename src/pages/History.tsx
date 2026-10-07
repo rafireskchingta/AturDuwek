@@ -55,7 +55,7 @@ export default function History() {
   const weekDays = ['MIN', 'SEN', 'SEL', 'RAB', 'KAM', 'JUM', 'SAB'];
 
   return (
-    <div className="w-full bg-[#FAF6F0] p-6 pb-24 flex flex-col items-center">
+    <div className="w-full bg-[#FAF6F0] px-6 pt-14 pb-24 flex flex-col items-center">
       
       {/* Header */}
       <header className="w-full flex justify-between items-center mb-6">

@@ -17,7 +17,7 @@ export default function Landing() {
     <div className="min-h-screen bg-gray-100 flex justify-center">
       <div className="w-full max-w-[428px] bg-[#FFFBF5] min-h-screen shadow-xl relative flex flex-col items-center animate-fade-in">
         {/* Navbar */}
-        <nav className="w-full px-6 pt-10 pb-4 flex items-center justify-between bg-white border-b border-[#F3E5D8]">
+        <nav className="w-full px-6 pt-14 pb-4 flex items-center justify-between bg-white border-b border-[#F3E5D8]">
           <div className="flex items-center gap-2">
             <img src="/logo.png" alt="Logo" className="w-10 h-10 object-contain" />
             <div>

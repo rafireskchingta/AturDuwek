@@ -13,7 +13,7 @@ export default function Register() {
 
   return (
     <div className="min-h-screen bg-gray-100 flex justify-center">
-      <div className="w-full max-w-[428px] bg-[#FAF6F0] min-h-screen relative flex flex-col pt-10 pb-8 items-center overflow-y-auto scrollbar-hide animate-fade-in">
+      <div className="w-full max-w-[428px] bg-[#FAF6F0] min-h-screen relative flex flex-col pt-14 pb-8 items-center overflow-y-auto scrollbar-hide animate-fade-in">
         
         {/* Back Button */}
         <div className="w-full px-6 mb-6">

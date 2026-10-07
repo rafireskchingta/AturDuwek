@@ -4,7 +4,7 @@ import { ArrowLeft, Bell, AlertCircle, CheckCircle } from 'lucide-react';
 export default function Notifications() {
   const navigate = useNavigate();
   return (
-    <div className="min-h-screen bg-background p-6 pb-24">
+    <div className="min-h-screen bg-background px-6 pt-14 pb-24">
       <div className="flex items-center justify-between mb-8">
         <button onClick={() => navigate(-1)} className="inline-flex items-center gap-1 bg-[#D99A5A] text-[#5D3A1A] font-semibold text-xs px-3 py-1.5 rounded-full hover:bg-[#C98A4A]">
           <ArrowLeft size={14} /> Kembali
