@@ -1,4 +1,4 @@
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { ArrowLeft, Bell, AlertCircle, CheckCircle } from 'lucide-react';
 
 export default function Notifications() {
